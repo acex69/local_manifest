@@ -2,66 +2,64 @@
 
  <manifest> 
 
-  
+ <remote name="hub" 
 
-   <remote name="dev" fetch="https://github.com/mt6768-dev" /> 
+         fetch="https://github.com" /> 
 
-   <remote name="aether192" fetch="https://github.com/aether192" /> 
+ <remote name="me" 
 
-   <remote name="clang" fetch="https://gitlab.com/sanjeevstunner"/> 
+         fetch="https://github.com/Futar0" /> 
 
-  
+ <remote name="dev" 
 
-  <!-- Common Device Tree --> 
+         fetch="https://github.com/mt6768-dev" /> 
 
-   <project path="device/xiaomi/mt6768-common" name="device_xiaomi_mt6768-common" remote="aether192" revision="eleven"/> 
+ <remote name="imss" 
 
-       
+         fetch="https://github.com/CipherOS" /> 
 
-  <!-- Device Tree --> 
+ <remote name="clang"  
 
-   <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot" remote="aether192" revision="lineage-20"/> 
-
-  
-
-  <!--Kernel --> 
-
-   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="dev" revision="lineage-20"/> 
+         fetch="https://gitlab.com/ImSurajxD" /> 
 
   
 
-  <!-- Common Vendor Trees-->  
+          
 
-   <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="dev" revision="lineage-20"/> 
+ <remove-project name="android_hardware_lineage_compat" /> 
 
-  
-
-  <!-- Vendor Trees --> 
-
-   <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot" remote="dev" revision="lineage-20"/> 
+         <project path="hardware/lineage/compat" name="Lafactorial/android_hardware_lineage_compat" remote="hub" revision="lineage-20.0" clone-depth="1" />  
 
   
 
-  <!--Hardware --> 
-
-   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dev" revision="lineage-20"/> 
-
   
 
+ <!-- Device Trees --> 
 
+   <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot.git" remote="me" revision="Evo" clone-depth="1" /> 
 
-  
+   <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common.git" remote="dev" revision="lineage-20" clone-depth="1" /> 
 
-  <!--MtkFMRadio --> 
+   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768.git" remote="me" revision="lineage-20" clone-depth="1" /> 
 
-   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="dev" revision="lineage-20"/> 
+   <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot.git" remote="me" revision="lineage-20" clone-depth="1" /> 
 
-    
+   <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common.git" remote="me" revision="lineage-20" clone-depth="1" /> 
 
-  <!--Clang --> 
+   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="me" revision="lineage-20" clone-depth="1" /> 
+
+   <project path="hardware/mediatek" name="mt6768-dev/android_hardware_mediatek.git" remote="hub" revision="lineage-20" clone-depth="1" /> 
+
+   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio.git" remote="me" revision="lineage-20" clone-depth="1" /> 
 
    <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" /> 
 
   
 
+  
+
  </manifest>
+
+  
+
+
