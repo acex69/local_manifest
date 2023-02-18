@@ -1,63 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
 
- <manifest> 
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="thirteen"
+          review="gerrit.pixelexperience.org" />
 
-  
+ 
+  <remote name="pixel-devices"
+          fetch="https://github.com/PixelExperience-Devices"
+          revision="thirteen" />
 
-   <remote name="dev" fetch="https://github.com/mt6768-dev" /> 
+  <remote name="pixel-devices-blobs"
+          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
+          revision="thirteen" />
 
-   <remote name="aether192" fetch="https://github.com/aether192" /> 
+  <remote name="fm"
+          fetch="https://github.com/begonia-dev"
+          revision="13.0"/>
 
-   <remote name="clang" fetch="https://gitlab.com/sanjeevstunner"/> 
+  <remote name="arrow"
+          fetch="https://github.com/ArrowOS-Devices"
+          revision="arrow-13.0"/>
 
-   <remote name="dead" fetch="https://github.com/deadaf5" />
-  
+  <remote name="me"
+          fetch="https://github.com/Arafattex"
+          revision="pixel"/>
 
-  <!-- Common Device Tree --> 
+  <remote name="pixel-gitlab"
+          fetch="https://gitlab.com/PixelExperience/thirteen"
+          revision="thirteen" />
 
-   <project path="device/xiaomi/mt6768-common" name="device_xiaomi_mt6768-common" remote="aether192" revision="eleven"/> 
+<!-- Remove some modules -->
+  <remove-project name="android_packages_modules_Bluetooth" />
+  <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
+  <remove-project name="android_device_qcom_common"/>
+  <remove-project name="android_vendor_404"/>
 
-       
+ <!-- Device Trees -->
+  <project path="device/xiaomi/lava" name="device_xiaomi_lava" remote="me" revision="p404"/>
 
-  <!-- Device Tree --> 
+ <!-- Common Trees -->
+  <project path="device/xiaomi/mt6768-common" name="device_xiaomi_mt6768-common" remote="pixel-devices" revision="thirteen"/>
 
-   <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot" remote="dead" revision="blaze"/> 
+ <!-- Kernel -->
+  <project path="kernel/xiaomi/mt6768" name="kernel_xiaomi_mt6768" remote="pixel-devices" revision="thirteen"/>
 
-  
+ <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/lava" name="vendor_xiaomi_lava" remote="pixel-devices-blobs" revision="thirteen"/>
 
-  <!--Kernel --> 
+ <!-- Extra -->
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="pixel" revision="thirteen"/>
+  <project path="hardware/mediatek" name="hardware_mediatek" remote="pixel" revision="thirteen"/>
+  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="fm" revision="13.0"/>
+  <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="arrow" revision="arrow-13.0"/>
 
-   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="dev" revision="lineage-20"/> 
+ <!-- Patch -->
+  <!--project path="vendor/aosp" name="vendor_aosp" remote="pixel" /-->
+  <project path="vendor/404" name="android_vendor_404" remote="me" revision="tokui"/>
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="fm" revision="13.0"/>
+  <!--project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="los" revision="lineage-20.0"/-->
 
-  
-
-  <!-- Common Vendor Trees-->  
-
-   <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="dev" revision="lineage-20"/> 
-
-  
-
-  <!-- Vendor Trees --> 
-
-   <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot" remote="dev" revision="lineage-20"/> 
-
-  
-
-  <!--Hardware --> 
-
-   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dev" revision="lineage-20"/> 
-  
-
-  <!--MtkFMRadio --> 
-
-   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="dev" revision="lineage-20"/> 
+</manifest>
 
     
 
-  <!--Clang --> 
 
-   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" /> 
-
-  
-
- </manifest>
