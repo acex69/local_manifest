@@ -1,1 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
 
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="thirteen"
+          review="gerrit.pixelexperience.org" />
+
+  <remote name="pixel-devices"
+          fetch="https://github.com/PixelExperience-Devices"
+          revision="thirteen" />
+
+  <remote name="pixel-devices-blobs"
+          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
+          revision="thirteen" />
+
+  <remote name="fm"
+          fetch="https://github.com/begonia-dev"
+          revision="13.0"/>
+
+  <remote name="arrow"
+          fetch="https://github.com/ArrowOS-Devices"
+          revision="arrow-13.0"/>
+
+  <remote name="me"
+          fetch="https://github.com/Arafattex"
+          revision="pixel"/>
+
+  <remote name="pixel-gitlab"
+          fetch="https://gitlab.com/PixelExperience/thirteen"
+          revision="thirteen" />
+
+<!-- Remove some modules -->
+  <remove-project name="android_packages_modules_Bluetooth" />
+  <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
+  <remove-project name="android_device_qcom_common"/>
+  <remove-project name="android_vendor_404"/>
+
+ <!-- Device Trees -->
+  <project path="device/xiaomi/lava" name="device_xiaomi_lava" remote="me" revision="p404"/>
+
+ <!-- Common Trees -->
+  <project path="device/xiaomi/mt6768-common" name="device_xiaomi_mt6768-common" remote="pixel-devices" revision="thirteen"/>
+
+ <!-- Kernel -->
+  <project path="kernel/xiaomi/mt6768" name="kernel_xiaomi_mt6768" remote="pixel-devices" revision="thirteen"/>
+
+ <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/lava" name="vendor_xiaomi_lava" remote="pixel-devices-blobs" revision="thirteen"/>
+
+ <!-- Extra -->
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="pixel" revision="thirteen"/>
+  <project path="hardware/mediatek" name="hardware_mediatek" remote="pixel" revision="thirteen"/>
+  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="fm" revision="13.0"/>
+  <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="arrow" revision="arrow-13.0"/>
+
+ <!-- Patch -->
+  <!--project path="vendor/aosp" name="vendor_aosp" remote="pixel" /-->
+  <project path="vendor/404" name="android_vendor_404" remote="me" revision="tokui"/>
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="fm" revision="13.0"/>
+  <!--project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="los" revision="lineage-20.0"/-->
+
+</manifest>
