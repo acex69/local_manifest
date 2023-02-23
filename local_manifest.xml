@@ -36,11 +36,11 @@
 
   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768.git" remote="dead" revision="lineage-20" clone-depth="1" />
 
-  <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot.git" remote="me" revision="lineage-20" clone-depth="1" />
+  <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot.git" remote="dead" revision="lineage-20" clone-depth="1" />
 
-  <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common.git" remote="me" revision="lineage-20" clone-depth="1" />
+  <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common.git" remote="dead" revision="lineage-20" clone-depth="1" />
 
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="me" revision="lineage-20" clone-depth="1" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="dead" revision="lineage-20" clone-depth="1" />
 
   <project path="hardware/mediatek" name="mt6768-dev/android_hardware_mediatek.git" remote="hub" revision="lineage-20" clone-depth="1" />
 
