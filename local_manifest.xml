@@ -46,7 +46,7 @@
 
   <project path="vendor/mediatek/interfaces" name="vendor_mediatek_interfaces.git" remote="me" revision="thirteen" clone-depth="1"/>
 
-  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio.git" remote="me" revision="lineage-20" clone-depth="1" />
+  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio.git" remote="dead" revision="lineage-20" clone-depth="1" />
 
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
