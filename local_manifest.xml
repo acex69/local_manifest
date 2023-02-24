@@ -26,7 +26,8 @@
 
         fetch="https://github.com/deadaf5" />
 
-        
+<remote name="pe"
+         fetch="https://github.com/PixelExperience" />
 
   <!-- Device Trees -->
 
