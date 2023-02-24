@@ -49,6 +49,6 @@
 
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
  
-  <project path="path="packages/apps/FaceUnlockService name="android_packages_apps_FaceUnlockService remote="pe" revision="thirteen" clone-depth="1" />
+  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="pe" revision="thirteen" clone-depth="1" />
 
 </manifest>
