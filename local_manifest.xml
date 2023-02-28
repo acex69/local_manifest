@@ -18,9 +18,11 @@
 
         fetch="https://github.com/CipherOS" />
 
-<remote name="clang" 
+<remote name="clang"  
 
-        fetch="https://gitlab.com/ImSurajxD" />
+         fetch="https://gitlab.com"/>
+
+        
 
 <remote name="dead"
 
@@ -45,6 +47,6 @@
 
   <project path="vendor/mediatek/interfaces" name="vendor_mediatek_interfaces.git" remote="me" revision="thirteen" clone-depth="1"/>
 
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-azure" name="Panchajanya1999/azure-clang" remote="clang" revision="main" clone-depth="1" />
 
 </manifest>
