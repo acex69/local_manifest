@@ -15,7 +15,7 @@
 <remote name="clang" 
         fetch="https://gitlab.com"/>
 <remote name="dead"
-         fetch="https://github.com/deadaf5" />
+         fetch="https://github.com/acex69" />
 <remote name="pe"
          fetch="https://github.com/PixelExperience" />
 
