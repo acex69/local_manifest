@@ -54,6 +54,6 @@
   <project path="vendor/gms" name="pixelexperience.org/android/vendor_gms" remote="gitlab" revision="thirteen" clone-depth="1" />
   
   <!--Anx cam-->
-  <!--project path="vendor/ANXCamera" name="vendor_aeonax_ANXCamera" remote="melab" revision="v202"/-->
+  <!--project path="vendor/ANXCamera" name="vendor_aeonax_ANXCamera" remote="dead" revision="v202"/-->
    
   </manifest>
