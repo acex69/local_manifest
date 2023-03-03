@@ -18,9 +18,6 @@
          fetch="https://github.com/PixelExperience" />
 <remote name="lineage"
          fetch="https://github.com/LineageOS" />
-<remote name="pixel-gitlab" 
-         fetch="https://gitlab.pixelexperience.org/android" />
-         
    
   <!-- Device Trees -->
   <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot.git" remote="dead" revision="main" clone-depth="1" />
