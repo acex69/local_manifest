@@ -21,6 +21,8 @@
 <remote name="lineage"
 
          fetch="https://github.com/LineageOS" />
+<remote name="pixel-gitlab" 
+         fetch="https://gitlab.pixelexperience.org/android" />
   <!-- Device Trees -->
 
   <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot.git" remote="dead" revision="main" clone-depth="1" />
@@ -33,4 +35,7 @@
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="clang" revision="master" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86/clang-azure" name="Panchajanya1999/azure-clang" remote="clang" revision="main" clone-depth="1" />
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="lineage" revision="lineage-20" clone-depth="1" />
+  <remove-project name="vendor_gms"/>
+
+  <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" revision="thirteen" clone-depth="1" />
 </manifest>
