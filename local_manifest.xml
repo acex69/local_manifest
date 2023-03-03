@@ -14,8 +14,6 @@
         fetch="https://gitlab.com"/>
 <remote name="dead"
          fetch="https://github.com/acex69" />
-<remote name="pe"
-         fetch="https://github.com/PixelExperience" />
 <remote name="lineage"
          fetch="https://github.com/LineageOS" />
    
@@ -46,9 +44,6 @@
   
   <!-- Mtk sepolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="lineage" revision="lineage-20" clone-depth="1" />
-  
-  <!--remove-project name="vendor_gms"/-->
-  <project path="vendor/gms" name="pixelexperience.org/android/vendor_gms" remote="gitlab" revision="thirteen" clone-depth="1" />
   
   <!--Anx cam-->
   <!--project path="vendor/ANXCamera" name="vendor_aeonax_ANXCamera" remote="dead" revision="v202"/-->
