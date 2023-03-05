@@ -20,7 +20,8 @@
          fetch="https://gitlab.com/arrowos-project" />
          
   <remove-project name="vendor_gms"/>
-
+  <remove-project name="vendor_aosp" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="dead" revision="trece" clone-depth="1" />
   <project path="vendor/gms" name="android_vendor_gapps.git" remote="arrow" revision="arrow-13.0" clone-depth="1" />
 
   <!-- Device Trees -->
