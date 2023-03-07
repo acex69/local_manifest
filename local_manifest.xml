@@ -10,7 +10,7 @@
         fetch="https://github.com/mt6768-dev" />
 <remote name="imss"
         fetch="https://github.com/CipherOS" />
-<remote name="gitlab"  
+<remote name="gitlab1"  
         fetch="https://gitlab.com"/>
 <remote name="dead"
          fetch="https://github.com/acex69" />
@@ -46,7 +46,7 @@
   <project path="vendor/mediatek/interfaces" name="vendor_mediatek_interfaces.git" remote="me" revision="thirteen" clone-depth="1"/>
   
   <!-- Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab1" revision="master" clone-depth="1" />
   
   <!-- Mtk sepolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="lineage" revision="lineage-20" clone-depth="1" />
