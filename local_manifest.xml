@@ -16,8 +16,8 @@
          fetch="https://github.com/acex69" />
 <remote name="lineage"
          fetch="https://github.com/LineageOS" />
-<remote name="arrow"
-         fetch="https://gitlab.com/arrowos-project" />
+
+         
          
   
 
