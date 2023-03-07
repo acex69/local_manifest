@@ -49,7 +49,7 @@
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab1" revision="master" clone-depth="1" />
   
   <!-- Mtk sepolicy -->
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="lineage" revision="lineage-20" clone-depth="1" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="dead" revision="main" clone-depth="1" />
   
   <!--Anx cam-->
   <!--project path="vendor/ANXCamera" name="vendor_aeonax_ANXCamera" remote="dead" revision="v202"/-->
