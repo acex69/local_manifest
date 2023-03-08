@@ -54,4 +54,6 @@
   <!--Anx cam-->
   <!--project path="vendor/ANXCamera" name="vendor_aeonax_ANXCamera" remote="dead" revision="v202"/-->
    
+  <!--Extra-->
+  <!--project path="extra" name="LineageOS/android_kernel_xiaomi_msm8953" remote="hub" revision="lineage-19.1"/-->
   </manifest>
