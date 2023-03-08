@@ -17,13 +17,6 @@
 <remote name="lineage"
          fetch="https://github.com/LineageOS" />
 
-         
-         
-  
-
-
-
-
   <!-- Device Trees -->
   <project path="device/xiaomi/lancelot" name="dt-rice.git" remote="dead" revision="main" clone-depth="1" />
    
