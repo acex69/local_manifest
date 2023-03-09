@@ -18,10 +18,10 @@
          fetch="https://github.com/LineageOS" />
 
   <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="dt-rice.git" remote="dead" revision="main" clone-depth="1" />
+  <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot.git" remote="dead" revision="main" clone-depth="1" />
    
   <!-- Common Device Tree -->
-  <project path="device/xiaomi/mt6768-common" name="mt6768-common.git" remote="dead" revision="main" clone-depth="1" />
+  <project path="device/xiaomi/mt6768-common" name="mt6768-common-aosp.git" remote="dead" revision="main" clone-depth="1" />
   
   <!-- Kernel Trees-->
   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768.git" remote="dead" revision="main" clone-depth="1" />
